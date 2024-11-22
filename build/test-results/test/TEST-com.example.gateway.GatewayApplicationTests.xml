@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.gateway.GatewayApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-22T15:55:13" hostname="DESKTOP-B7G8SLV" time="0.405">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.gateway.GatewayApplicationTests" time="0.405"/>
+  <system-out><![CDATA[22:55:11.281 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.gateway.GatewayApplicationTests]: GatewayApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:55:11.339 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.gateway.GatewayApplication for test class com.example.gateway.GatewayApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::       (v3.4.1-SNAPSHOT)
+
+2024-11-22T22:55:11.708+07:00  INFO 27744 --- [gateway] [    Test worker] c.e.gateway.GatewayApplicationTests      : Starting GatewayApplicationTests using Java 20.0.1 with PID 27744 (started by NC in C:\Users\NC\Desktop\Java20-API\API-Gateway\gateway)
+2024-11-22T22:55:11.710+07:00  INFO 27744 --- [gateway] [    Test worker] c.e.gateway.GatewayApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T22:55:12.255+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ed282db-603f-32e5-a523-339c232d6395
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2024-11-22T22:55:12.773+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2024-11-22T22:55:12.774+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2024-11-22T22:55:12.774+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-11-22T22:55:12.774+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2024-11-22T22:55:12.774+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-11-22T22:55:13.019+07:00  INFO 27744 --- [gateway] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-11-22T22:55:13.257+07:00  INFO 27744 --- [gateway] [    Test worker] c.e.gateway.GatewayApplicationTests      : Started GatewayApplicationTests in 1.774 seconds (process running for 2.475)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
