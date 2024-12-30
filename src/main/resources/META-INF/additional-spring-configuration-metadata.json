@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "gateway.cache.ttl.services.product-service",
+    "type": "java.lang.Long",
+    "description": "A description for 'gateway.cache.ttl.services.product-service'"
+  },
+  {
+    "name": "gateway.cache.ttl.default",
+    "type": "java.lang.Long",
+    "description": "A description for 'gateway.cache.ttl.default'"
+  }
+]}
