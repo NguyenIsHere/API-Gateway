@@ -7,6 +7,9 @@ LABEL maintainer="your-email@example.com"
 # Tạo thư mục làm việc
 WORKDIR /app
 
+# Create logs directory
+RUN mkdir -p /app/logs
+
 # Copy file JAR vào container
 COPY build/libs/gateway-0.0.1-SNAPSHOT.jar app.jar
 

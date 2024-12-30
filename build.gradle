@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.3.6'
+    id 'org.springframework.boot' version '3.4.0'
     id 'io.spring.dependency-management' version '1.1.6'
 }
 
@@ -18,7 +18,7 @@ repositories {
 }
 
 ext {
-    set('springCloudVersion', "2023.0.2")
+    set('springCloudVersion', "2024.0.0")
 }
 
 dependencyManagement {
@@ -34,6 +34,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive' // Redis support
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client' // Eureka client
     implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer' // Load balancer
+    implementation 'com.github.ben-manes.caffeine:caffeine:3.1.8'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.projectreactor:reactor-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
@@ -43,6 +44,7 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
-compileJava {
+tasks.withType(JavaCompile) {
     options.compilerArgs << '-parameters'
 }
+

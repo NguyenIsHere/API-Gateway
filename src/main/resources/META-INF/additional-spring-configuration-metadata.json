@@ -1,12 +1,14 @@
-{"properties": [
-  {
-    "name": "gateway.cache.ttl.services.product-service",
-    "type": "java.lang.Long",
-    "description": "A description for 'gateway.cache.ttl.services.product-service'"
-  },
-  {
-    "name": "gateway.cache.ttl.default",
-    "type": "java.lang.Long",
-    "description": "A description for 'gateway.cache.ttl.default'"
-  }
-]}
+{
+  "properties": [
+    {
+      "name": "gateway.cache.ttl.default",
+      "type": "java.lang.Long",
+      "description": "Default TTL for all routes in the gateway."
+    },
+    {
+      "name": "gateway.cache.ttl.services.product-service",
+      "type": "java.lang.Long",
+      "description": "TTL for the product-service route."
+    }
+  ]
+}

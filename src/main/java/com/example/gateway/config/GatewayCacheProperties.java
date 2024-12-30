@@ -1,33 +1,44 @@
 package com.example.gateway.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Primary;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Primary
-@ConfigurationProperties(prefix = "gateway.cache.ttl")
+@EnableCaching
+@ConfigurationProperties(prefix = "gateway.cache")
+@Component
 public class GatewayCacheProperties {
+  private Ttl ttl = new Ttl();
 
-  private Map<String, Long> services = new HashMap<>();
+  public static class Ttl {
+    private Integer defaultValue = 600;
+    private Map<String, Integer> services = new HashMap<>();
 
-  public Map<String, Long> getServices() {
-    return services;
+    public Integer getDefaultValue() {
+      return defaultValue;
+    }
+
+    public void setDefaultValue(Integer defaultValue) {
+      this.defaultValue = defaultValue;
+    }
+
+    public Map<String, Integer> getServices() {
+      return services;
+    }
+
+    public void setServices(Map<String, Integer> services) {
+      this.services = services;
+    }
   }
 
-  public void setServices(Map<String, Long> services) {
-    this.services = services;
+  public Ttl getTtl() {
+    return ttl;
   }
 
-  private Long defaultTtl = 300L; // Default TTL value
-
-  public Long getDefaultTtl() {
-    return defaultTtl;
+  public void setTtl(Ttl ttl) {
+    this.ttl = ttl;
   }
-
-  public void setDefaultTtl(Long defaultTtl) {
-    this.defaultTtl = defaultTtl;
-  }
-
 }
